@@ -1,0 +1,149 @@
+0000.001 (0) Opened log file at time: Fri, 22 Aug 2025 07:45:15 +0000 on https://www.takase-shika.com
+0000.003 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.7 WP: 6.8.2 PHP: 8.3.24 (apache2handler, Linux users225.phy.heteml.jp 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x86_64) MySQL: 5.6.23-log (max packet size=20971520) WPLANG: ja Server: Apache safe_mode: 0 max_execution_time: 120 memory_limit: 300M (used: 47.6M | 48.5M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: N LANG: ja_JP.UTF-8 WP Proxy: disabled ZipArchive::addFile: Y
+0000.004 (0) Free space on disk containing Updraft's temporary directory: 2140001.9 MB
+0000.011 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: daily)
+0000.011 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.013 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1755762434, seconds_ago=86281)
+0000.015 (0) Set semaphore last lock (d) time to 2025-08-22 07:45:15
+0000.015 (0) Semaphore lock (d) complete
+0000.017 (0) Backup run: resumption=0, nonce=9099b40796e9, file_nonce=9099b40796e9 begun at=1755848715 (0s ago), job type=backup
+0000.018 (0) Scheduling a resumption (1) after 300 seconds (1755849015) in case this run gets aborted
+0000.031 (0) PHP event: code E_DEPRECATED: rtrim(): Passing null to parameter #1 ($string) of type string is deprecated (line 2829, wp-includes/formatting.php)
+0000.032 (0) This backup run is not intended for files - skipping
+0000.032 (0) Beginning creation of database dump (WordPress DB)
+0000.038 (0) SQL compatibility mode is: NO_ENGINE_SUBSTITUTION
+0000.040 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.117 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `uxtnghwt_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 * (truncated - 1558 bytes total)
+0000.119 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.131 (0) Table uxtnghwt_options: Total expected rows (via COUNT): 328
+0000.132 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.150 (0) Table uxtnghwt_options: Rows added in this batch (next record: 415003): 324 (uncompressed bytes in this segment=274710) in 0.02 seconds
+0000.156 (0) Table uxtnghwt_options: finishing file(s) (2, 43.7 KB)
+0000.167 (0) Table uxtnghwt_users: Total expected rows (via COUNT): 3
+0000.169 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.174 (0) Table uxtnghwt_users: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1738) in 0.01 seconds
+0000.176 (0) Table uxtnghwt_users: finishing file(s) (2, 0.8 KB)
+0000.188 (0) Table uxtnghwt_usermeta: Total expected rows (via COUNT): 64
+0000.188 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.191 (0) Table uxtnghwt_usermeta: Rows added in this batch (next record: 93): 64 (uncompressed bytes in this segment=4994) in 0.01 seconds
+0000.195 (0) Table uxtnghwt_usermeta: finishing file(s) (2, 1.8 KB)
+0000.205 (0) Table uxtnghwt_commentmeta: Total expected rows (via COUNT): 0
+0000.210 (0) Table uxtnghwt_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=709) in 0.01 seconds
+0000.213 (0) Table uxtnghwt_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.217 (0) Table uxtnghwt_comments: Total expected rows (via COUNT): 0
+0000.218 (0) Table uxtnghwt_comments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1707) in 0.00 seconds
+0000.221 (0) Table uxtnghwt_comments: finishing file(s) (2, 0.5 KB)
+0000.225 (0) Table uxtnghwt_links: Total expected rows (via COUNT): 0
+0000.226 (0) Table uxtnghwt_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1304) in 0.00 seconds
+0000.229 (0) Table uxtnghwt_links: finishing file(s) (2, 0.5 KB)
+0000.232 (0) Table uxtnghwt_postmeta: Total expected rows (approximate): 8843
+0000.357 (0) Table uxtnghwt_postmeta: binary mysqldump finished (writes: 32, bytes 618052, return code 0) in 0.13 seconds
+0000.359 (0) Table uxtnghwt_postmeta: finishing file(s) (1, 93.2 KB)
+0000.391 (0) Table uxtnghwt_posts: Total expected rows (approximate): 1216
+0000.623 (0) Table uxtnghwt_posts: Rows added in this batch (next record: 2763): 1402 (uncompressed bytes in this segment=3923352) in 0.26 seconds
+0000.626 (0) Table uxtnghwt_posts: finishing file(s) (2, 514.9 KB)
+0000.629 (0) Table uxtnghwt_term_relationships: Total expected rows (approximate): 101
+0000.631 (0) Table uxtnghwt_term_relationships: Rows added in this batch (next record: 100000): 146 (uncompressed bytes in this segment=2862) in 0.00 seconds
+0000.633 (0) Table uxtnghwt_term_relationships: finishing file(s) (2, 0.8 KB)
+0000.637 (0) Table uxtnghwt_term_taxonomy: Total expected rows (via COUNT): 6
+0000.638 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.639 (0) Table uxtnghwt_term_taxonomy: Rows added in this batch (next record: 7): 6 (uncompressed bytes in this segment=1131) in 0.00 seconds
+0000.642 (0) Table uxtnghwt_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0000.647 (0) Table uxtnghwt_termmeta: Total expected rows (via COUNT): 0
+0000.648 (0) Table uxtnghwt_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=694) in 0.00 seconds
+0000.651 (0) Table uxtnghwt_termmeta: finishing file(s) (2, 0.4 KB)
+0000.655 (0) Table uxtnghwt_terms: Total expected rows (via COUNT): 6
+0000.655 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.676 (0) Table uxtnghwt_terms: Rows added in this batch (next record: 7): 6 (uncompressed bytes in this segment=1245) in 0.02 seconds
+0000.685 (0) Table uxtnghwt_terms: finishing file(s) (2, 0.7 KB)
+0000.689 (0) Table uxtnghwt_ewwwio_images: Total expected rows (via COUNT): 637
+0000.708 (0) Table uxtnghwt_ewwwio_images: Rows added in this batch (next record: 637): 637 (uncompressed bytes in this segment=123656) in 0.02 seconds
+0000.711 (0) Table uxtnghwt_ewwwio_images: finishing file(s) (2, 14.2 KB)
+0000.726 (0) Table uxtnghwt_ewwwio_queue: Total expected rows (via COUNT): 0
+0000.727 (0) Table uxtnghwt_ewwwio_queue: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=855) in 0.01 seconds
+0000.730 (0) Table uxtnghwt_ewwwio_queue: finishing file(s) (2, 0.4 KB)
+0000.734 (0) Table uxtnghwt_insidestepsystem: Total expected rows (approximate): 202
+0000.750 (0) Table uxtnghwt_insidestepsystem: Rows added in this batch (next record: 1000): 295 (uncompressed bytes in this segment=206750) in 0.02 seconds
+0000.754 (0) Table uxtnghwt_insidestepsystem: finishing file(s) (2, 16.5 KB)
+0000.768 (0) Table uxtnghwt_siteguard_history: Total expected rows (approximate): 9979
+0000.891 (0) Table uxtnghwt_siteguard_history: binary mysqldump finished (writes: 32, bytes 592792, return code 0) in 0.12 seconds
+0000.893 (0) Table uxtnghwt_siteguard_history: finishing file(s) (1, 64.2 KB)
+0000.896 (0) Table uxtnghwt_siteguard_login: Total expected rows (approximate): 2
+0000.899 (0) Table uxtnghwt_siteguard_login: Rows added in this batch (next record: 1000): 2 (uncompressed bytes in this segment=732) in 0.00 seconds
+0000.903 (0) Table uxtnghwt_siteguard_login: finishing file(s) (2, 0.4 KB)
+0000.912 (0) Table uxtnghwt_user_login_log: Total expected rows (approximate): 191743
+0000.915 (0) [Warning] テーブル uxtnghwt_user_login_log には非常に多くの行 (191743) があります。Web ホスティング会社がそのテーブルをバックアップで削除するのに十分なリソースを提供してくれることを願っています。 そうでない場合、このテーブルからデータを削除するか、ホスティング業者にリソースの増加を問い合わせる必要があります。
+0002.467 (0) Table uxtnghwt_user_login_log: binary mysqldump finished (writes: 131, bytes 97051726, return code 0) in 1.55 seconds
+0002.472 (0) Table uxtnghwt_user_login_log: finishing file(s) (1, 2686.6 KB)
+0002.472 (0) PHP event: code E_WARNING: filemtime(): stat failed for /home/users/0/arima-line/web/02.takase-shika.com/wp-content/updraft/backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db.gz (line 1923, wp-content/plugins/updraftplus/backup.php)
+0002.474 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_options.table.tmpr415004.gz (1/18/fopen): adding to final database dump
+0002.475 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_options.table.gz (2/18/fopen): adding to final database dump
+0002.476 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_users.table.tmpr4.gz (3/18/fopen): adding to final database dump
+0002.476 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_users.table.gz (4/18/fopen): adding to final database dump
+0002.476 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_usermeta.table.tmpr94.gz (5/18/fopen): adding to final database dump
+0002.477 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_usermeta.table.gz (6/18/fopen): adding to final database dump
+0002.477 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_commentmeta.table.tmpr0.gz (7/18/fopen): adding to final database dump
+0002.478 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_commentmeta.table.gz (8/18/fopen): adding to final database dump
+0002.478 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_comments.table.tmpr0.gz (9/18/fopen): adding to final database dump
+0002.479 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_comments.table.gz (10/18/fopen): adding to final database dump
+0002.480 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_links.table.tmpr0.gz (11/18/fopen): adding to final database dump
+0002.480 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_links.table.gz (12/18/fopen): adding to final database dump
+0002.481 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_postmeta.table.gz (13/18/fopen): adding to final database dump
+0002.483 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_posts.table.tmpr2764.gz (14/18/fopen): adding to final database dump
+0002.491 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_posts.table.gz (15/18/fopen): adding to final database dump
+0002.491 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_term_relationships.table.tmpr100001.gz (16/18/fopen): adding to final database dump
+0002.492 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_term_relationships.table.gz (17/18/fopen): adding to final database dump
+0002.492 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_term_taxonomy.table.tmpr8.gz (18/18/fopen): adding to final database dump
+0002.493 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_term_taxonomy.table.gz (19/18/fopen): adding to final database dump
+0002.494 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_termmeta.table.tmpr0.gz (20/18/fopen): adding to final database dump
+0002.494 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_termmeta.table.gz (21/18/fopen): adding to final database dump
+0002.495 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_terms.table.tmpr8.gz (22/18/fopen): adding to final database dump
+0002.495 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_terms.table.gz (23/18/fopen): adding to final database dump
+0002.496 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_ewwwio_images.table.tmpr638.gz (24/18/fopen): adding to final database dump
+0002.497 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_ewwwio_images.table.gz (25/18/fopen): adding to final database dump
+0002.500 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_ewwwio_queue.table.tmpr0.gz (26/18/fopen): adding to final database dump
+0002.501 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_ewwwio_queue.table.gz (27/18/fopen): adding to final database dump
+0002.502 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_insidestepsystem.table.tmpr1001.gz (28/18/fopen): adding to final database dump
+0002.503 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_insidestepsystem.table.gz (29/18/fopen): adding to final database dump
+0002.504 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_siteguard_history.table.gz (30/18/fopen): adding to final database dump
+0002.505 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_siteguard_login.table.tmpr1001.gz (31/18/fopen): adding to final database dump
+0002.506 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_siteguard_login.table.gz (32/18/fopen): adding to final database dump
+0002.507 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db-table-uxtnghwt_user_login_log.table.gz (33/18/fopen): adding to final database dump
+0002.533 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db.gz: finished writing out complete database file (3440.6 KB)
+0002.602 (0) Total database tables backed up: 18 (backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db.gz, size: 3523336, sha1: b15ee2caa79917190e4b1fe6afe670fa1a7ce778, sha256: c5c5029f40c5f25f5276000c0234a84a5cf505edab74a4db2b4257200a7fd020)
+0002.616 (0) backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db.gz: db: This file has not yet been successfully uploaded: will queue
+0002.616 (0) Saving backup history. Total backup size: 3.4 MB
+0002.621 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0002.622 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0002.627 (0) No remote despatch: user chose no remote backup service
+0002.628 (0) Recording as successfully uploaded: backup_2025-08-22-1645_wwwtakaseshikacom_9099b40796e9-db.gz
+0002.630 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=3
+0002.631 (0) Number of backup sets in history: 4; groups (db): 1
+0002.632 (0) Examining (for databases) backup set with group_id=0, nonce=9099b40796e9, datestamp=1755848715 (Aug 22 2025 07:45:15)
+0002.632 (0) This backup set is the backup set just made, so will not be deleted.
+0002.632 (0) Examining (for databases) backup set with group_id=0, nonce=cae807a3e825, datestamp=1755762434 (Aug 21 2025 07:47:14)
+0002.632 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.633 (0) Examining (for databases) backup set with group_id=0, nonce=d9f5aa35df04, datestamp=1755675742 (Aug 20 2025 07:42:22)
+0002.633 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.633 (0) Examining (for databases) backup set with group_id=0, nonce=186b1b783d61, datestamp=1755589228 (Aug 19 2025 07:40:28)
+0002.633 (0) 1755589228: db: this set includes a database (backup_2025-08-19-1640_wwwtakaseshikacom_186b1b783d61-db.gz); db count is now 3
+0002.633 (0) 1755589228: db: over retain limit (3); will delete this database
+0002.633 (0) Delete file: backup_2025-08-19-1640_wwwtakaseshikacom_186b1b783d61-db.gz, service=none
+0002.634 (0) Deleting local copy (backup_2025-08-19-1640_wwwtakaseshikacom_186b1b783d61-db.gz)
+0002.635 (0) This backup set is now empty; will remove from history
+0002.636 (0) Deleting log file (log.186b1b783d61.txt)
+0002.636 (0) Number of backup sets in history: 3; groups (files): 1
+0002.637 (0) Examining (for files) backup set with nonce=9099b40796e9, datestamp=1755848715 (Aug 22 2025 07:45:15)
+0002.637 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.638 (0) Examining (for files) backup set with nonce=cae807a3e825, datestamp=1755762434 (Aug 21 2025 07:47:14)
+0002.638 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.638 (0) Examining (for files) backup set with nonce=d9f5aa35df04, datestamp=1755675742 (Aug 20 2025 07:42:22)
+0002.638 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.638 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0002.642 (0) Resume backup (9099b40796e9, 0): finish run
+0002.644 (0) Decremented the semaphore (d) by 1
+0002.645 (0) Semaphore (d) unlocked
+0002.645 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0002.647 (0) The backup succeeded and is now complete
+0002.648 (0) No email will/can be sent - the user has not configured an email address.
+0002.649 (0) バックアップは成功し、完了しました

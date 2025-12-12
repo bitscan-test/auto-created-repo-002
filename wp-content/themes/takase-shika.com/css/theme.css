@@ -1,0 +1,125 @@
+/*電話リンクのカーソルをオフ*/
+a[href^="tel:"] {
+    cursor: default;
+}
+
+/*chromeで画像縮小時の文字にじみをfix*/
+img {
+    -webkit-backface-visibility: hidden;
+}
+
+/*WP必須クラス*/
+.wp-caption {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.wp-caption-text {
+    padding: 10px;
+    margin-bottom: 0;
+}
+.sticky {
+    background: #FAFAFA;
+    border-top: 4px solid #F00;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 18px 20px;
+}
+.gallery-caption {
+    font-size: 0.8em;
+}
+.bypostauthor {
+    color: #999;
+}
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+pre {
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5 {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/*---投稿大枠---*/
+.postdata {
+    text-align: left;
+}
+.postdata::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.postdata p{
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+/*---配置　右---*/
+.postdata .alignright {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+/*---配置　左---*/
+.postdata .alignleft {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+/*---配置　中央---*/
+.postdata .aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto 20px;
+}
+/*---テーブル---*/
+.postdata table {
+    border-left: 1px solid #bfbfbf;
+    border-top: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+}
+.postdata table th {
+    border-bottom: 1px solid #bfbfbf;
+}
+.postdata table td {
+    border-bottom: 1px solid #bfbfbf;
+}
+/*---フォント---*/
+.postdata em {
+    font-style: italic !important;
+}
+.postdata strong {
+    font-weight: bold !important;
+}
+
+.postdata iframe{
+	max-width: 100%;
+}
+
+/* スマホ時に回り込みを解除*/
+@media only screen and (max-width: 800px) {
+    .postdata .alignright {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+    .postdata .alignleft {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+    input[type="email"] {
+        max-width: 100%;
+    }
+}
