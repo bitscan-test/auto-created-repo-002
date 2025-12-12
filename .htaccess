@@ -1,0 +1,66 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} (.*)heteml\. [NC]
+RewriteRule ^(.*)$ https://www.takase-shika.com/ [R=301,L]
+RewriteCond %{QUERY_STRING} ^author=([0-9]*)
+RewriteRule .* https://www.takase-shika.com/? [L,R=302]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+<ifModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+	ExpiresByType application/x-font-ttf "access plus 1 year"
+	ExpiresByType application/x-font-opentype "access plus 1 year"
+	ExpiresByType application/x-font-woff "access plus 1 year"
+</ifModule>
+
+<FilesMatch "^(wp-config\.php|wp-mail\.php|install\.php)">
+Order Allow,Deny
+</FilesMatch>
+<Files "xmlrpc.php">
+Order Allow,Deny
+</Files>
+
+
+
+#SITEGUARD_PLUGIN_SETTINGS_START
+#SITEGUARD_PLUGIN_SETTINGS_END
+
+# BEGIN WordPress
+# "BEGIN WordPress" から "END WordPress" までのディレクティブ (行) は
+# 動的に生成され、WordPress フィルターによってのみ修正が可能です。
+# これらのマーカー間にあるディレクティブへのいかなる変更も上書きされてしまいます。
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+
+# BEGIN EWWWIO
+# "BEGIN EWWWIO" から "END EWWWIO" までのディレクティブ (行) は
+# 動的に生成され、WordPress フィルターによってのみ修正が可能です。
+# これらのマーカー間にあるディレクティブへのいかなる変更も上書きされてしまいます。
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_FILENAME} (.*)\.(jpe?g|png|gif)$
+RewriteCond %{REQUEST_FILENAME}.webp -f
+RewriteCond %{QUERY_STRING} !type=original
+RewriteRule (.+)\.(jpe?g|png|gif)$ %{REQUEST_URI}.webp [T=image/webp,L]
+</IfModule>
+<IfModule mod_headers.c>
+<FilesMatch "\.(jpe?g|png|gif)$">
+Header append Vary Accept
+</FilesMatch>
+</IfModule>
+AddType image/webp .webp
+# END EWWWIO
